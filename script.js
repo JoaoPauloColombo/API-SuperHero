@@ -1,11 +1,7 @@
-
 let search = document.getElementById("search");
 const ul = document.getElementById("auto-complete");
 
 let hero = [];
-let favarray = [];
-var heroid = 0;
-var favid =0;
 
 search.onkeyup = function () {
   var searchname = search.value;
@@ -92,15 +88,4 @@ function loadDetails(heroid) {
     .catch((error) => console.log(error));
 }
 
-function favpush (favid){ 
-  console.log(favid);
-  if (favarray.includes(favid)) {
-    alert("Voce já adicionou esse personagem nos favoritos");
-    return;
-}
-  favarray.push(favid);
-
-  console.log(favarray);
-  localStorage.setItem('favlistarr', JSON.stringify(favarray));
-}
 

@@ -80,10 +80,6 @@ function loadDetails(heroid) {
         ", Strength : " +
         data.powerstats.strength;
 
-        var favv= document.getElementById("favbtn");
-        favv.setAttribute("style","display:flex;");
-        favv.setAttribute('value',data.id)
-
     })
     .catch((error) => console.log(error));
 }
